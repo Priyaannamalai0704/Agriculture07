@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Agriculture</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f5fff3;
+    }
+
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 15px 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 100px 20px;
+      min-height: 10vh;
+    }
+
+    #home {
+      background: url('https://source.unsplash.com/1600x900/?farm,agriculture') no-repeat center/cover;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #home h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    #about, #skills, #contact {
+      background: white;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2e7d32;
+    }
+
+    .skills-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+                                                                                                          
+    .skill {
+      background: #e8f5e9;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+      color: #2e7d32;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: #f1f8e9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    form button {
+      margin-top: 15px;
+      background: #2e7d32;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    form button:hover {
+      background: #1b5e20;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>🌱 Smart Agriculture</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome to Smart Agriculture</h2>
+    <p>Revolutionizing farming with technology and innovation</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="max-width: 800px; margin: auto; text-align: center;">
+      I am passionate about integrating modern technologies into agriculture. 
+      This Smart Agriculture project focuses on monitoring soil conditions, 
+      automating irrigation, and improving crop yield with data-driven insights.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills & Technologies</h2>
+    <div class="skills-list">
+      <div class="skill">IoT Sensors</div>
+      <div class="skill">Soil Monitoring</div>
+      <div class="skill">Smart Irrigation</div>
+      <div class="skill">Weather Prediction</div>
+      <div class="skill">AI & Data Analytics</div>
+    </div>
+  </section>
+    <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+
+   </form>
+
+    <p id="response" style="text-align:center; margin-top:10px; color:green;"></p>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Smart Agriculture Project | All Rights Reserved</p>
+  </footer>
+
+  
